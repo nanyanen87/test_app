@@ -1,6 +1,9 @@
-<h2>RailsCampBlog</h2>
+<h2><%= image_tag 'main-img.jpeg' %></h2>
 <ul>
 <% @articles.each do |article|%>
-<li><%=  article.title %></li>
+<li>
+  <%= link_to article.title, article_path(article) %>
+  <%=  article.title %>
+</li>
 <% end %>
 </ul>
