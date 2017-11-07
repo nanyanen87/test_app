@@ -1,5 +1,5 @@
 <h2>
-  <%= image_tag 'main-img.jpeg' %>
+  <%= image_tag 'main-img.jpeg',class: 'top-image' %>
   
 </h2>
 <ul>
@@ -7,6 +7,6 @@
 <li>
   <%= link_to article.title, article_path(article) %>
   <%=  article.title %>
-</li>
+  
 <% end %>
 </ul>
